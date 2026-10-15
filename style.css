@@ -1,0 +1,189 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #333;
+    line-height: 1.6;
+   }
+/* Navigation bar */
+nav {
+    background-color: #16803c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul a:hover,
+nav ul a.active {
+    color: #ffe066;
+}
+
+/* Main content */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #16803c;
+    margin-bottom: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #e67e22;
+    margin: 20px 0 10px;
+}
+p {
+    text-align: center;
+    color: #e67e22;
+    margin-bottom: 15px;
+p
+}
+/* Juice products */
+img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.product h2 {
+    color: #16803c;
+}
+
+.price {
+    color: #e67e22;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.product a,
+button {
+    display: inline-block;
+    background-color: #16803c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.product a:hover,
+button:hover {
+    background-color: #0d5728;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* History and employees */
+section {
+    margin-bottom: 30px;
+}
+
+.history,
+.employees {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile screens */
+@media (max-width:600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
